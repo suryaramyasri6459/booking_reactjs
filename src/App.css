@@ -1,0 +1,176 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+/* Main container styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.booking-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+/* Booking options styles */
+.booking-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.booking-button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.booking-button.active {
+  background-color: #005a4f;
+}
+
+.booking-icon {
+  margin-right: 8px;
+}
+
+/* Booking details styles */
+.booking-details h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.booking-form p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-form input[type='text'],
+.booking-form input[type='date'],
+.booking-form input[type='number'] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.booking-form button[type='submit'] {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.booking-form button[type='submit']:hover {
+  background-color: #005a4f;
+}
+
+/* Seat selection styles */
+.seat-selection {
+  margin-top: 20px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.seat-button {
+  background-color: #81c784;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.seat-button.selected {
+  background-color: #2196f3;
+}
+
+.seat-button.booked {
+  background-color: #f44336;
+  cursor: not-allowed;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Thank you message styles */
+.thank-you {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #009688;
+}
+
+button.book-button,
+button.back-button {
+  background-color: #009688; /* Violet */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button.book-button:hover,
+button.back-button:hover {
+  background-color: #009688; /* Darker Violet (hover color) */
+}
+
+/* ... (other styles) */
